@@ -10,7 +10,7 @@ import ListTransaction from '../Components/ListTransaction';
 const Dashboard = () => {
     const [transactions, setTransactions] = useState(initialTransactions);
     const [filter, setFilter] = useState('');
-    
+
     const addTransaction = (transaction) => {
         setTransactions([...transactions, transaction]);
     };
@@ -32,10 +32,10 @@ const Dashboard = () => {
         }
     });
     return (
-        <div>
+        <div className='bg-white'>
             <Header user={Userprofile}/>
-            <div className='h-[80vh] flex flex-col justify-start items-center'>
-                <h1 className="text-center mt-5 mb-5 font-black text-3xl text-blue-900">Dashboard</h1>
+            <div className='w-[90vw] h-[80vh] m-auto drop-shadow-2xl my-10 shadow-xl flex flex-col justify-start items-center rounded-lg'>
+                <h1 className="text-center mt-5 mb-5 font-black text-3xl text-blue-900 shadow-xl px-10 py-2 rounded-lg">Dashboard</h1>
                 <AddTransaction addTransaction={addTransaction}/>
                 <FilterTransaction setFilter={setFilter}/>
                 <ListTransaction transactions={filteredTransactions} deleteTransaction={deleteTransaction} updateTransaction={updateTransaction}/>
