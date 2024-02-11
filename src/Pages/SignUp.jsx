@@ -36,31 +36,31 @@ function Signup() {
 						<div className="">
 							<label htmlFor="" className="text-base font-bold text-blue-700 "> 
 								First Name <br />
-								<input type="text" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
+								<input type="text" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} className=" border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
 							</label>{" "}
 							<br />
 							<label htmlFor="" className="text-base font-bold text-blue-700 ">
 								Last Name <br />
-								<input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mt-1 h-8" />
+								<input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} className="border-2 w-[100%] rounded-md pl-2 text-base font-normal mt-1 h-8" />
 							</label>
 						</div>
 					) : currentStep === 2 ? (
 						<div>
 							<label htmlFor="" className="text-base font-bold text-blue-700 ">
 								Phone no <br />
-								<input type="tel" placeholder="Phone Number" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
+								<input type="tel" placeholder="Phone Number" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className=" border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
 							</label>{" "}
 							<br />
 							<label htmlFor="" className="text-base font-bold text-blue-700 mb-5">
 								Email <br />
-								<input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mt-1 h-8" />
+								<input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} className=" border-2 w-[100%] rounded-md pl-2 text-base font-normal mt-1 h-8" />
 							</label>
 						</div>
 					) : currentStep === 3 ? (
 						<div>
 							<label htmlFor="" className="text-base font-bold text-blue-700 ">
 								Password <br />
-								<input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
+								<input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} className=" border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
 							</label>
 						</div>
 					) : null}
