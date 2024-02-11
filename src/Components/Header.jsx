@@ -1,14 +1,13 @@
-import '../../../css/header.css'
+
 
 const Header = (props) => {
 
     const {user} = props;
     return(
         <>
-            <a className="header" href="#0">
-                <i className="fa fa-bars"></i>
-                <div className="header-user"><i className="fas fa-user-circle icon"></i>Hello <span style={{color: "#FDBA0B"}}>{user.fullName}</span></div>
-            </a>
+            <div className="bg-blue-700 h-[10vh] flex justify-end items-center pr-10">
+                <p className="text-lg font-bold text-white">Hello <span className="text-[#FDBA0B]" >{user.userName}</span></p>
+            </div>
         </>
     )
 }
