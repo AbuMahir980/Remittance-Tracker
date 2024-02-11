@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const AddTransaction = () => {
+const AddTransaction = ({addTransaction}) => {
     const [sender, setSender] = useState('');
     const [recipient, setRecipient] = useState('');
     const [amount, setAmount] = useState('');
@@ -9,6 +9,7 @@ const AddTransaction = () => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
+        addTransaction({sender, recipient, amount: parseInt(amount), date, category});
         setSender('');
         setRecipient('');
         setAmount('');
