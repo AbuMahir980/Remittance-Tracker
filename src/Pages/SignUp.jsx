@@ -28,57 +28,56 @@ function Signup() {
 	
 	// Render the signup form
 	return (
-		<div className="container">
-			<h2 id="head">Signup</h2>
-			<div>
-				{currentStep === 1 ? (
-					<div className="mini-container">
-						<label htmlFor="">
-							First Name <br />
-							<input type="text" value={firstName} onChange={e => setFirstName(e.target.value)} className="inputs" />
-						</label>{" "}
-						<br />
-						<label htmlFor="">
-							Last Name <br />
-							<input type="text" value={lastName} onChange={e => setLastName(e.target.value)} className="inputs" />
-						</label>
-					</div>
-				) : currentStep === 2 ? (
-					<div className="mini-container">
-						<label htmlFor="">
-							Phone no <br />
-							<input type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className="inputs" />
-						</label>{" "}
-						<br />
-						<label htmlFor="">
-							Email <br />
-							<input type="email" value={email} onChange={e => setEmail(e.target.value)} className="inputs" />
-						</label>
-					</div>
-				) : currentStep === 3 ? (
-					<div className="mini-container">
-						<label htmlFor="">
-							Password <br />
-							<input type="password" value={password} onChange={e => setPassword(e.target.value)} className="inputs" />
-						</label>
-					</div>
-				) : null}
-			</div>
-
-			<div>
-				<div className="btn">
+		<div className="flex justify-center items-center mt-16 mb-16">
+			<div className='bg-white shadow-lg w-[30vw] h-[60vh] rounded-lg p-10'>
+				<h2 className="mb-5 text-center font-black text-3xl text-blue-800 leading-8 font-sans">Signup</h2>
+				<div className="mb-6 px-6 h-[60%]">
+					{currentStep === 1 ? (
+						<div className="">
+							<label htmlFor="" className="text-base font-bold text-blue-700 "> 
+								First Name <br />
+								<input type="text" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
+							</label>{" "}
+							<br />
+							<label htmlFor="" className="text-base font-bold text-blue-700 ">
+								Last Name <br />
+								<input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mt-1 h-8" />
+							</label>
+						</div>
+					) : currentStep === 2 ? (
+						<div>
+							<label htmlFor="" className="text-base font-bold text-blue-700 ">
+								Phone no <br />
+								<input type="tel" placeholder="Phone Number" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
+							</label>{" "}
+							<br />
+							<label htmlFor="" className="text-base font-bold text-blue-700 mb-5">
+								Email <br />
+								<input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mt-1 h-8" />
+							</label>
+						</div>
+					) : currentStep === 3 ? (
+						<div>
+							<label htmlFor="" className="text-base font-bold text-blue-700 ">
+								Password <br />
+								<input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} className="border border-2 w-[100%] rounded-md pl-2 text-base font-normal mb-6 mt-1 h-8" />
+							</label>
+						</div>
+					) : null}
+				</div>
+				<div className="px-6 flex flex-row justify-between">
 					{currentStep > 1 && (
-						<button onClick={handlePrev} >
+						<button onClick={handlePrev} className="border p-2 text-base font-semibold w-20 rounded-md bg-blue-700 text-white" >
 							Previous
 						</button>
 					)}
 					{currentStep < 3 && (
-						<button onClick={handleNext} >
+						<button onClick={handleNext} className="border p-2 text-base font-semibold w-14 rounded-md bg-blue-700 text-white">
 							Next
 						</button>
 					)}
 					{currentStep === 3 && (
-						<button onClick={handleSubmit} >
+						<button onClick={handleSubmit} className="border p-2 text-base font-semibold w-20 rounded-md bg-blue-700 text-white">
 							Submit
 						</button>
 					)}
