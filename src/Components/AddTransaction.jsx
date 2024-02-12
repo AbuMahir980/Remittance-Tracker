@@ -18,16 +18,16 @@ const AddTransaction = ({addTransaction}) => {
     }
     return (
         <div>
-            <form action="" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Sender" value={sender} onChange={e => setSender(e.target.value)} />
-                <input type="text" placeholder="Recipient" value={recipient} onChange={e => setRecipient(e.target.value)} />
-                <input type="number" placeholder="Amount" value={amount} onChange={e => setAmount(e.target.value)} />
-                <input type="date" value={date} onChange={e => setDate(e.target.value)} />
-                <select value={category} onChange={e => setCategory(e.target.value)}>
-                    <option value="personal">Personal</option>
+            <form action="" onSubmit={handleSubmit} className="flex justify-between gap-8">
+                <input type="text" placeholder="Sender" value={sender} onChange={e => setSender(e.target.value)} className="p-1 pl-2 rounded-md" />
+                <input type="text" placeholder="Recipient" value={recipient} onChange={e => setRecipient(e.target.value)} className="p-1 pl-2 rounded-md" />
+                <input type="number" placeholder="Amount" value={amount} onChange={e => setAmount(e.target.value)} className="p-1 pl-2 rounded-md" />
+                <input type="date" value={date} onChange={e => setDate(e.target.value)} className="p-1 pl-2 rounded-md"/>
+                <select value={category} onChange={e => setCategory(e.target.value)} className="p-1 pl-2 rounded-md">
+                    <option value="personal" className="pr-2">Personal</option>
                     <option value="business">Business</option>
                 </select>
-                <button type="submit">Add Transaction</button>
+                <button type="submit" className="p-1 pl-2 pr-2 rounded-md bg-blue-900 text-white font-bold">Submit</button>
             </form>
         </div>
     )

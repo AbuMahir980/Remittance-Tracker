@@ -34,7 +34,7 @@ const Dashboard = () => {
     return (
         <div className='bg-white'>
             <Header user={Userprofile}/>
-            <div className='w-[90vw] h-[80vh] m-auto drop-shadow-2xl my-10 shadow-xl flex flex-col justify-start items-center rounded-lg'>
+            <div className='w-[90vw] min-h-[80vh] m-auto drop-shadow-2xl my-5 shadow-xl flex flex-col justify-start items-center rounded-lg pb-5'>
                 <h1 className="text-center mt-5 mb-5 font-black text-3xl text-blue-900 shadow-xl px-10 py-2 rounded-lg">Dashboard</h1>
                 <AddTransaction addTransaction={addTransaction}/>
                 <FilterTransaction setFilter={setFilter}/>

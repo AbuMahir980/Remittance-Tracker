@@ -3,10 +3,10 @@ import TransactionRow from './TransactionRow'
 
 const ListTransaction = ({ transactions, deleteTransaction, updateTransaction }) => {
     return (
-        <div>
+        <div className=' m-auto drop-shadow-2xl  shadow-xl rounded-lg'>
             <table>
             <thead>
-                <tr>
+                <tr className="flex justify-between gap-20 m-auto text-center">
                 <th>Sender</th>
                 <th>Recipient</th>
                 <th>Amount</th>
