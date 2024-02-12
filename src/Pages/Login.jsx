@@ -9,7 +9,7 @@ const Login = () => {
         e.preventDefault();
         setEmail('');
         setPassword('');
-        navigate('/dashboard') //replace will remove the history so when we click
+        navigate('/dashboard')
     }
     return(
         <>
