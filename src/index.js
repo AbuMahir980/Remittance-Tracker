@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './Test/reportWebVitals';
-import Signup from './Pages/SignUp';
-import Login from './Pages/Login';
+// import Signup from './Pages/SignUp';
+// import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
