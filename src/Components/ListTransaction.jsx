@@ -3,7 +3,7 @@ import TransactionRow from './TransactionRow'
 
 const ListTransaction = ({ transactions, deleteTransaction, updateTransaction }) => {
     return (
-        <div className='bg-white m-auto drop-shadow-2xl text-blue-900 shadow-xl rounded-lg'>
+        <div className='bg-white m-auto drop-shadow-2xl text-blue-900 rounded-lg'>
             <table>
             <thead>
                 <tr className="grid grid-cols-6 text-center py-3 gap-5 m-auto text-center px-5 ">
