@@ -37,7 +37,7 @@ const Dashboard = () => {
             <Header user={Userprofile}/>
             <div className='w-[90vw] min-h-[80vh] m-auto drop-shadow-2xl my-5 shadow-xl flex flex-col justify-start items-center rounded-lg pb-5'>
                 <h1 className="text-center mt-5 mb-5 font-black text-3xl text-blue-900 shadow-xl px-10 py-2 rounded-lg">Dashboard</h1>
-                <div className='bg-blue-900 rounded-lg py-5 px-5 mb-16 mt-10'>
+                <div className='bg-white drop-shadow-2xl rounded-lg py-5 px-5 mb-16 mt-10'>
                     {/* <LineChart width={800} height={300} data={initialTransactions} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                         <Line type="monotone" dataKey="amount" stroke="#8884d8" />
                         <CartesianGrid stroke="#ccc" strokeDasharray="2 2" />

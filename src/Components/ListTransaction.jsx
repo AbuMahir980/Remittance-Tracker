@@ -6,7 +6,7 @@ const ListTransaction = ({ transactions, deleteTransaction, updateTransaction })
         <div className='bg-white m-auto drop-shadow-2xl text-blue-900 rounded-lg'>
             <table>
             <thead>
-                <tr className="grid grid-cols-6 text-center py-3 gap-5 m-auto text-center px-5 ">
+                <tr className="grid grid-cols-6 py-3 gap-5 m-auto text-center px-5 drop-shadow-2xl my-3">
                 <th>Sender</th>
                 <th>Recipient</th>
                 <th>Amount</th>
