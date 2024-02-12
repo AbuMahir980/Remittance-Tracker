@@ -32,12 +32,12 @@ const TransactionRow = ({ transaction, deleteTransaction, updateTransaction }) =
             <td><button onClick={handleUpdate}>Save</button></td>
             </>
         ) : (
-            <div className="flex justify-between gap-20 m-auto text-center px-5 py-1">
-            <td>{transaction.sender}</td>
-            <td>{transaction.recipient}</td>
-            <td>{transaction.amount}</td>
-            <td>{transaction.date}</td>
-            <td>{transaction.category}</td>
+            <div className="grid grid-cols-6 gap-5 m-auto text-center  py-1">
+            <td className=' text-center'>{transaction.sender}</td>
+            <td className='text-center'>{transaction.recipient}</td>
+            <td className='text-center'>{transaction.amount}</td>
+            <td className='text-center'>{transaction.date}</td>
+            <td className='text-center'>{transaction.category}</td>
             <td className="flex gap-5">
                 <button onClick={() => setIsEditing(true)}>Edit</button>
                 <button onClick={handleDelete}>Delete</button>
