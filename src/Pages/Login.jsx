@@ -1,12 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (e) =>{
         e.preventDefault();
         setEmail('');
         setPassword('');
+        navigate('/dashboard') //replace will remove the history so when we click
     }
     return(
         <>
@@ -24,9 +27,7 @@ const Login = () => {
 							</label>
                     </div>
                     <div className="px-6 flex flex-row justify-center">
-                        <button onClick={handleSubmit} className="border p-2 text-base font-semibold w-[100%] rounded-md bg-blue-700 text-white">
-							Submit
-						</button>
+                        <input type="submit" onClick={handleSubmit} className="border p-2 text-base font-semibold w-[100%] rounded-md bg-blue-700 text-white" />
                     </div>
                 </div>
             </div>

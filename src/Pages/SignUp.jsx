@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
 	const [currentStep, setCurrentStep] = useState(1);
@@ -7,6 +8,8 @@ function Signup() {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+	const navigate = useNavigate();
 
 	const handleNext = () => {
 		setCurrentStep(currentStep + 1);
@@ -24,6 +27,7 @@ function Signup() {
         setEmail('');
         setPassword('');
         alert(`Welcome ${firstName}! Your account has been created.`);
+		navigate('/login')
     }
 	
 	// Render the signup form
