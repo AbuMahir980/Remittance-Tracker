@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 import AddTransaction from '../Components/AddTransaction';
 import FilterTransaction from '../Components/FilterTransaction';
 import ListTransaction from '../Components/ListTransaction';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, Tooltip, Legend } from 'recharts';
 
 const Dashboard = () => {
     const [transactions, setTransactions] = useState(initialTransactions);
